@@ -1,0 +1,77 @@
+/* App.css */
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+button {
+    margin: 10px 0; /* Adds margin for spacing above and below the button */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Adds gap between consecutive buttons */
+button + button {
+    margin-left: 10px; /* Adjust the gap between buttons here */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #0056b3, #003d80);
+    transform: scale(1.05);
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Responsive Styles for Tablets and Mobile Devices */
+@media (max-width: 1024px) {
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    .error {
+        font-size: 12px;
+    }
+}
