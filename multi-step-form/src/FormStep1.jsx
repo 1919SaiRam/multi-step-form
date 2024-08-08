@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import './App.module.css'; // Ensure CSS is imported
+import './App.module.css'; 
 
 const FormStep1 = ({ data, setData, nextStep, errors }) => {
   return (
